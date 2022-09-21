@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https: //fonts.googleapis.com/css2? família= Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900 &family= Roboto:wght@100;300;500 & display=swap" rel="stylesheet">
+    <head>
+
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="contato.css">
+
+        <title>Produtos - Barbearia Alura</title>
+
+    </head>
+        <body>
+
+            <header>
+
+                <div class="caixa">
+
+                    <h1><img src = "images/logo_alura_babrber.svg" alt="Logo Alura SVG" width="20%"/></h1>
+
+                    <nav>
+                        
+                        <ul>
+                            <a href="index.html" target=" _blank "><li>Home</li></a>
+                            <a href="produto.html" target=" _blank "><li>Produtos</li></a>
+                            <a href="contato.html" target=" _blank "><li>Contato</li></a>
+                        </ul>
+
+                    </nav>
+                
+                </div>
+            
+            </header>
+
+
+
+            <main>
+
+                 <form>
+                    <label for="nome">Nome e Sobrenome</label>
+                    <input type="text" id="nome" class="input-padrao" required placeholder="Seu nome e sobrenome">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" class="input-padrao" required placeholder="seuemail@domínio.com">
+
+                    <label for="telefone">Celular</label>
+                    <input type="tel" id="telefone" class="input-padrao" required placeholder="(00) 00000-0000">
+
+                    
+                    <label for="mensagem">Como podemos ajudar?</label>
+
+                    <p>Digite sua mensagem no campo abaixo:</p>
+
+                    <textarea id="mensagem" cols="30" rows="10" class="input-padrao"></textarea>
+
+                 <fieldset>
+
+                    <legend>Como prefere o nosso contato?</legend>
+
+                    <label for="radio-email"> <input type="radio" name="contato" value="email" id="radio-email">E-mail</label>
+                    
+
+                    <label for="radio-telefone"> <input type="radio" name="contato" value="telefone" id="radio-telefone">Celular</label>
+                    
+
+                    <label for="radio-whatsapp"> <input type="radio" name="contato" value="whastapp" id="radio-whatsapp">Whatsapp</label>  
+
+                 </fieldset>
+
+                 <fieldset>
+
+                    <legend>Qual seu horário de preferência?</legend>
+
+                    <select>
+
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+            
+                    </select>
+
+                 </fieldset>
+
+
+                 <label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por e-mail?</label>
+
+                 
+                 <input type="submit" value="Enviar" class="enviar">
+
+                 </form>  
+
+                 <table>
+
+                    <thead>
+                        <tr>
+                            
+                            <th>Dias</th>
+                            <th>Horários</th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            
+                            <td>Segunda</td>
+                            <td>8h as 20h</td>
+
+                        </tr>
+
+                        <tr>
+                            
+                            <td>Quarta</td>
+                            <td>8h as 20h</td>
+
+                        </tr>
+
+                        <tr>
+                            
+                            <td>Sexta</td>
+                            <td>8h as 20h</td>
+
+                        </tr>
+                    </tbody>
+                    
+                 </table>
+
+
+
+            </main>
+
+            <footer>
+                <div id="footer-logo" img src="images/logo_alura_babrber.svg"></div>
+            </footer>
+                <p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
+
+        </body>
+
+</html>

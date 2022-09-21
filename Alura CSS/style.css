@@ -1,0 +1,233 @@
+
+body { 
+    font-family:'Lato', sans-serif;
+	margin: 0;
+}
+
+main {
+	background-color: rgb(255, 251, 245);
+
+}
+header {
+
+    margin: 0;
+	background: rgb(0,0,0);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+
+}
+
+.banner {
+
+	margin: 0;
+    background-image:
+	linear-gradient(180deg, rgba(0,0,0,1) 13%, rgba(255,255,255,0) 100%),
+	url('images/home-banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+
+	width: 100%;
+	height: 400px;
+}
+
+.caixa {
+
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+
+nav {
+
+    position: absolute;
+    top: 60px;
+    right: 0;
+
+}
+
+nav li { 
+
+    display:inline;
+    margin: 0 0 0 15px;
+
+}
+
+nav a {
+
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 26px;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+
+    font-size: 26px;
+    color:  purple;
+	
+}
+
+
+.principal{
+	
+	background: #161616;
+	color: #FFFFFF;
+	margin: 0;
+	padding: 3% 20% 3% 20%;
+
+}
+
+
+.titulo-centralizado {
+
+	text-align: center;
+	font-size: 2.5em;
+	margin: 0 0 1em;
+
+}
+
+.principal p {
+
+	text-align: justify;
+}
+
+.utensilios {
+
+	width: 150px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+p {
+	text-align: center;
+	
+}
+
+#missao {
+	font-size: 20px
+}
+
+.principal em strong {
+	color: rgb(209, 23, 209);
+}
+
+.mapa {
+	padding: 3% 10% 3% 10%;
+
+}
+
+.mapa p {
+	text-align: center;
+	padding: 0;
+}
+
+.mapa h3 {
+	text-align: center;
+	font-size: 36px;
+	padding: 0;
+	margin: 0;
+}
+
+.itens {
+	font-style: italic;
+	line-height: 1.5;
+	vertical-align: top;
+	
+}
+
+.beneficios {
+	padding: 3% 10% 3% 10%;
+	font-size: 24px;
+
+}
+
+.beneficios h3 {
+	margin: 0;
+	font-size: 36px;
+	text-align: center;
+	padding: 3% 10% 3% 10%;
+	
+
+}
+
+.lista-beneficios {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 auto;
+	color: #FFFFFF;
+
+}
+
+.conteudo-beneficios {
+	background-color: #161616;
+	border-radius: 10px;
+	padding: 0;
+
+}
+
+.itens:first-child {
+	font-weight: bold;
+
+}
+
+.imagembeneficios {
+    width: 50%;
+    margin: 0 auto;
+	padding: auto;
+	justify-content: left;
+	
+
+}
+
+.video {
+    width: 100%;
+    margin: 0 auto 3% auto;
+
+	text-align: center;
+}
+#footer-logo {
+    background: url("images/logo_alura_babrber.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+}
+
+footer, .copyright {
+
+    color: #FFFFFF;
+	font-size: 13px;
+	margin: 0;
+    text-align:center;
+    background-color: #161616;
+    width: 100%;
+	padding: 20px 0px 20px 0px;
+    vertical-align: bottom;
+    height: 100%;
+
+}
+
+@media screen and (max-width: 480px) {
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+		
+	}
+
+	nav {
+		position: static;
+	}
+
+	.lista-beneficios, .imagembeneficios {
+		width: 100%;
+	}
+}
