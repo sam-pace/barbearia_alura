@@ -2,12 +2,9 @@
 body { 
     font-family:'Lato', sans-serif;
 	margin: 0;
-}
-
-main {
 	background-color: rgb(255, 251, 245);
-
 }
+
 header {
 
     margin: 0;
@@ -105,29 +102,35 @@ nav a:hover {
 }
 
 p {
+
 	text-align: center;
 	
 }
 
 #missao {
+
 	font-size: 20px
 }
 
 .principal em strong {
+
 	color: rgb(209, 23, 209);
 }
 
 .mapa {
+
 	padding: 3% 10% 3% 10%;
 
 }
 
 .mapa p {
+
 	text-align: center;
 	padding: 0;
 }
 
 .mapa h3 {
+
 	text-align: center;
 	font-size: 36px;
 	padding: 0;
@@ -135,6 +138,7 @@ p {
 }
 
 .itens {
+
 	font-style: italic;
 	line-height: 1.5;
 	vertical-align: top;
@@ -142,12 +146,14 @@ p {
 }
 
 .beneficios {
+
 	padding: 3% 10% 3% 10%;
 	font-size: 24px;
 
 }
 
 .beneficios h3 {
+
 	margin: 0;
 	font-size: 36px;
 	text-align: center;
@@ -157,6 +163,7 @@ p {
 }
 
 .lista-beneficios {
+
 	width: 40%;
 	display: inline-block;
 	vertical-align: top;
@@ -166,6 +173,7 @@ p {
 }
 
 .conteudo-beneficios {
+
 	background-color: #161616;
 	border-radius: 10px;
 	padding: 0;
@@ -173,11 +181,13 @@ p {
 }
 
 .itens:first-child {
+
 	font-weight: bold;
 
 }
 
 .imagembeneficios {
+
     width: 50%;
     margin: 0 auto;
 	padding: auto;
@@ -187,12 +197,14 @@ p {
 }
 
 .video {
+
     width: 100%;
     margin: 0 auto 3% auto;
 
 	text-align: center;
 }
 #footer-logo {
+
     background: url("images/logo_alura_babrber.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -213,21 +225,26 @@ footer, .copyright {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
+
 	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+
 		width: auto;
 	}
 
 	h1 {
+
 		text-align: center;
 		
 	}
 
 	nav {
+
 		position: static;
 	}
 
 	.lista-beneficios, .imagembeneficios {
+
 		width: 100%;
 	}
 }

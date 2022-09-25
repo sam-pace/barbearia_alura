@@ -84,7 +84,6 @@ nav a:hover {
 }
 
 .produtos li {
-    
 
     text-align: center;
     display: inline-block;
@@ -113,6 +112,7 @@ nav a:hover {
 
 }
 .preco {
+
     font-size: 22px;
     font-weight: bold;
     margin: 10px;
@@ -125,6 +125,7 @@ nav a:hover {
 }
 
 #footer-logo {
+
     background: url("images/logo_alura_babrber.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -132,6 +133,7 @@ nav a:hover {
 }
 
 footer {
+
 	text-align: center;
     background-color: #161616;
 	padding:  20px;
@@ -141,10 +143,26 @@ footer {
 
 
 .copyright {
+
 	color: #FFFFFF;
 	font-size: 13px;
 	margin:0;
     text-align:center;
     background-color: #161616;
     padding: 20px;
+}
+
+@media screen and (max-width: 720px) {
+
+    .caixa, .produtos {
+
+        width: 100%;
+
+    }
+
+    .nav {
+
+        position: static;
+
+    }
 }
