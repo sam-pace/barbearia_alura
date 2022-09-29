@@ -6,73 +6,80 @@ body {
 }
 
 header {
-
     margin: 0;
 	background: rgb(0,0,0);
     background-position: center;
-    background-size: 100%;
     background-repeat: no-repeat;
     padding: 20px 0;
+	height: 15vh;
 
 }
 
 .banner {
-
-	margin: 0;
-    background-image:
-	linear-gradient(180deg, rgba(0,0,0,1) 13%, rgba(255,255,255,0) 100%),
+	background-image: linear-gradient(180deg, rgba(0,0,0,1) 13%, rgba(255,255,255,0) 100%),
 	url('images/home-banner.jpg');
-    background-position: center;
+	background-position: center;
     background-repeat: no-repeat;
-
-	width: 100%;
+	background-size: auto;
 	height: 400px;
+	width: 100%;
+
 }
 
-.caixa {
-
+#caixa {
     position: relative;
-    width: 940px;
     margin: 0 auto;
+	height: 10vh;
+	align-items: center;
 }
 
+#caixa .logo {
+	margin-left: 10%;
 
+}
 
-nav {
-
+#menu {
     position: absolute;
-    top: 60px;
+	top: 30%;
     right: 0;
+	align-items: center;
+	padding: 0 10%;
 
+	
 }
-
-nav li { 
-
+#menu li {
     display:inline;
-    margin: 0 0 0 15px;
+    margin: 0 0 0 1.5rem;
 
 }
 
-nav a {
 
+#menu a {
     text-transform: uppercase;
     color: #ffffff;
     font-weight: bold;
     font-size: 26px;
     text-decoration: none;
+	
+	
 
 }
 
-nav a:hover {
-
+#menu a:hover {
     font-size: 26px;
     color:  purple;
 	
 }
 
+  
+  #btn-mobile {
+    display: none;
+	color: aliceblue;
+	margin: 0 ;
+}
+
 
 .principal{
-	
 	background: #161616;
 	color: #FFFFFF;
 	margin: 0;
@@ -82,7 +89,6 @@ nav a:hover {
 
 
 .titulo-centralizado {
-
 	text-align: center;
 	font-size: 2.5em;
 	margin: 0 0 1em;
@@ -90,161 +96,246 @@ nav a:hover {
 }
 
 .principal p {
-
 	text-align: justify;
 }
 
 .utensilios {
-
 	width: 150px;
 	float: left;
 	margin: 0 20px 20px 0;
 }
 
 p {
-
 	text-align: center;
+	font-size: 18px;
 	
 }
 
 #missao {
-
 	font-size: 20px
 }
 
 .principal em strong {
-
 	color: rgb(209, 23, 209);
 }
 
 .mapa {
-
 	padding: 3% 10% 3% 10%;
+	margin: 0;
+
 
 }
 
 .mapa p {
-
 	text-align: center;
 	padding: 0;
 }
 
 .mapa h3 {
-
 	text-align: center;
 	font-size: 36px;
 	padding: 0;
 	margin: 0;
 }
 
-.itens {
-
-	font-style: italic;
-	line-height: 1.5;
-	vertical-align: top;
+#container-svg {
+	display: flex;
+	margin: 0;
+	justify-content: center;
 	
 }
 
 .beneficios {
-
 	padding: 3% 10% 3% 10%;
 	font-size: 24px;
 
 }
 
-.beneficios h3 {
-
+.beneficios h3, .beneficios-vd {
 	margin: 0;
 	font-size: 36px;
 	text-align: center;
-	padding: 3% 10% 3% 10%;
+	color: #161616;
 	
 
 }
 
-.lista-beneficios {
-
-	width: 40%;
-	display: inline-block;
-	vertical-align: top;
-	padding: 0 auto;
-	color: #FFFFFF;
-
-}
-
-.conteudo-beneficios {
-
-	background-color: #161616;
-	border-radius: 10px;
-	padding: 0;
-
-}
-
-.itens:first-child {
-
-	font-weight: bold;
-
-}
-
-.imagembeneficios {
-
-    width: 50%;
-    margin: 0 auto;
-	padding: auto;
-	justify-content: left;
-	
-
-}
-
-.video {
-
-    width: 100%;
-    margin: 0 auto 3% auto;
-
+.beneficios-vd {
+	padding: 3% 10% 0 10%;
 	text-align: center;
 }
-#footer-logo {
 
+#container{
+	background: #161616;
+	overflow: hidden;
+	margin: 1em auto;
+	height: 100%;
+	width: 80%;
+	color: aliceblue;
+  
+	
+}
+
+.beneficios-lista {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 30px;
+	height: 100%;
+	float: left;
+	font-size: 26px;
+	line-height: 1.9;
+
+}
+
+
+.img-beneficios {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	float: right;
+	width: 50%;
+}
+
+#container img {width: 100%;height: 100%;}
+
+.video {
+    width: 100%;
+    margin: 0 auto 3% auto;
+	text-align: center;
+}
+
+footer {
+	background-color: #161616;
+	color: aliceblue;
+	padding: 15px;
+	text-align: center;
+}
+
+#footer-logo {
     background: url("images/logo_alura_babrber.svg");
     background-repeat: no-repeat;
     background-position: center;
     height: 100px;
 }
 
-footer, .copyright {
 
-    color: #FFFFFF;
-	font-size: 13px;
-	margin: 0;
-    text-align:center;
-    background-color: #161616;
-    width: 100%;
-	padding: 20px 0px 20px 0px;
-    vertical-align: bottom;
-    height: 100%;
+@media (max-width: 700px) {
 
-}
 
-@media screen and (max-width: 720px) {
+	.beneficios h3, .beneficios-vd {
+		text-align: center;
+		justify-content: center;
 
-	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
-
-		width: auto;
 	}
 
-	h1 {
 
+	h1 {
 		text-align: center;
 		
 	}
 
-	nav {
-
-		position: static;
+	#caixa .logo {
+		margin-top: 5%;
+		align-items: center;
+		width: 20%;
+		
 	}
 
-	.lista-beneficios, .imagembeneficios {
+	#menu {
+		display: flex;
+		justify-content: flex-end;
+		height: 70px;
+		top: 10%;
+		width: 100vw;
+		padding: 1rem;
+		right: 0;
+		align-items: center;
+		background: transparent;
+	}
+		#menu-li {
+		  display: flex;
+		  flex-direction: column;
+		  gap: 5%;
+		  position: absolute;
+		  width: 100%;
+		  top: 70px;
+		  right: 0px;
+		  background: currentColor;
+		  transition: 0.6s;
+		  z-index: 1000;
+		  height: 0px;
+		  visibility: hidden;
+		  overflow-y: hidden;
+		}
+		#menu.active #menu-li {
+		  height: calc(100vh - 70px);
+		  visibility: visible;
+		  overflow-y: auto;
+		}
+		#menu-li a {
+		  padding: 1rem 0;
+		  margin: 0 1rem;
+		  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+		}
 
+		button#btn-mobile {
+			justify-content: center;
+		}
+		#btn-mobile {
+		  display: flex;
+		  padding: 0.5rem 1rem;
+		  font-size: 1.5rem;
+		  border: none;
+		  background: none;
+		  cursor: pointer;
+		  gap: 0.5rem;
+		  flex-direction: row;
+		  justify-content: center;
+		  align-items: center;
+
+		}
+		#hamburger {
+		  border-top: 5px solid;
+		  width: 32px;
+		}
+		#hamburger::after,
+		#hamburger::before {
+		  content: '';
+		  display: block;
+		  width: 32px;
+		  height: 5px;
+		  background: currentColor;
+		  margin-top: 3px;
+		  transition: 0.3s;
+		  position: relative;
+		}
+		#menu.active #hamburger {
+		  border-top-color: transparent;
+		  
+		}
+		#menu.active #hamburger::before {
+		  transform: rotate(135deg);
+		}
+		#menu.active #hamburger::after {
+		  transform: rotate(-135deg);
+		  top: -7px;
+		}
+
+	.img-beneficios {
+		flex-direction: column;
 		width: 100%;
 	}
-}
+
+	.utensilios {
+		width: 60vw;
+	}
+
+	.banner {
+		background-image: none;
+		width: 100%;
+		height: 100%;
+
+	}
+  }

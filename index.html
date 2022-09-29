@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https: //fonts.googleapis.com/css2? família= Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900 &family= Roboto:wght@100;300;500 & display=swap" rel="stylesheet">
+
 	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https: //fonts.googleapis.com/css2? família= Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900 &family= Roboto:wght@100;300;500 & display=swap" rel="stylesheet">
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Barbearia Alura</title>
 		<link rel="stylesheet" href="style.css">
 	</head>
 
 	<body>
 
-		<header>
-
-			<div class="caixa">
-
-				<h1><img src = "images/logo_alura_babrber.svg" alt="Logo Alura SVG" width="20%"/></h1>
-
-				<nav>
-					
-					<ul>
-						<a href="index.html" target=" _blank "><li>Home</li></a>
-						<a href="produto.html" target=" _blank "><li>Produtos</li></a>
-						<a href="contato.html" target=" _blank "><li>Contato</li></a>
-					</ul>
-
-				</nav>
-			
+		<header id="caixa">
+			<div>
+				<img class="logo" src = "images/logo_alura_babrber.svg" alt="Logo Alura SVG" width="15%"/>
 			</div>
-		
+			<nav id="menu">
+				<button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+					<span id="hamburger"></span>
+				  </button>
+				<ul id="menu-li" role="menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="produto.html">Produtos</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
 		</header>
 
-		<div class="banner"></div>
+		<div class="banner">
+
+		</div>
 
 		<main>
 			<section>
@@ -47,51 +46,59 @@
 					<p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
 
 					<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
-
-
-
-				</div>
+			
 			</section>
 
-			<section class="beneficios">
-
-				<h3>Beneficíos</h3>
+			<div class="beneficios">
+				<h3>Benefícios</h3>
+			</div>
+			<div id="container">	
+	
+				<div class="beneficios-lista">
+					<ul>
+						<li>Atendimento aos Clientes</li>
+						<li>Espaço diferenciado</li>
+						<li>Localização</li>
+						<li>Profissionais Qualificados</li>
+						<li>Pontualidade</li>
+						<li>Limpeza</li>
+					</ul>
+				</div>
+			
+				<div class="img-beneficios">
+					<img src="images/beneficios.jpg" alt="">
+				</div>
+		    </div>
 				
-				<div class="conteudo-beneficios">					
-					<ul class="lista-beneficios">
-						<li class="itens">Atendimento aos Clientes</li>
-						<li class="itens">Espaço diferenciado</li>
-						<li class="itens">Localização</li>
-						<li class="itens">Profissionais Qualificados</li>
-						<li class="itens">Pontualidade</li>
-						<li class="itens">Limpeza</li>
-					</ul><img src="/images/beneficios.jpg" class="imagembeneficios">
-				</div>
-			</section>
-
-<section class="mapa">
-
+			<div class="beneficios">
 				<h3>Nosso estabelecimento</h3>
-				<p>Nosso estabelecimento está localizado no coração da cidade.</p>
-
+				<p>Estamos localizados no coração da cidade.</p>
+			</div>
+			<div id="container-svg">
+				<svg xmlns="http://www.w3.org/2000/svg"  width="15%" height="15%" fill="currentColor" class="bi-geo-alt-fill" viewBox="0 0 16 16">
+					<path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+				  </svg>
+			</div>
+			
+			
+		<section class="mapa">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1065561985406!2d-46.653905482556155!3d-23.5646162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59541c6c79c3%3A0x36b90a85f0f8cb33!2sGrupo%20Alura!5e0!3m2!1sen!2sbr!4v1663637443549!5m2!1sen!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-			</section>
-
+			<div class="beneficios-vd">
+					<h3>Tratamento premium</h3>
+					<p>Veja mais sobre nosso trabalho no nosso canal do Youtube.</p>
+			</div>
+		</section>
 				<div class="video">
-
-				<iframe width="50%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+				<iframe width="80%" height="600" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
-
-
-
 		</main>
 
 		<footer>
 			<div id="footer-logo" img src="images/logo_alura_babrber.svg"></div>
-		</footer>
 			<p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
+		</footer>
 
+		<script src="./script.js"></script>
 	</body>
 </html>
