@@ -35,12 +35,13 @@ header {
 
 #caixa .logo {
 	margin-left: 10%;
+	margin-top: 3%;
 
 }
 
 #menu {
     position: absolute;
-	top: 30%;
+	top: 60%;
     right: 0;
 	align-items: center;
 	padding: 0 10%;
@@ -50,7 +51,7 @@ header {
 #menu li {
     display:inline;
     margin: 0 0 0 1.5rem;
-
+	
 }
 
 
@@ -239,7 +240,7 @@ footer {
 	#caixa .logo {
 		margin-top: 5%;
 		align-items: center;
-		width: 20%;
+		width: 10%;
 		
 	}
 
@@ -250,6 +251,7 @@ footer {
 		top: 10%;
 		width: 100vw;
 		padding: 1rem;
+		margin: 0;
 		right: 0;
 		align-items: center;
 		background: transparent;
@@ -257,9 +259,9 @@ footer {
 		#menu-li {
 		  display: flex;
 		  flex-direction: column;
+		  align-items: flex-end;
 		  gap: 5%;
 		  position: absolute;
-		  width: 100%;
 		  top: 70px;
 		  right: 0px;
 		  background: currentColor;
@@ -282,10 +284,12 @@ footer {
 
 		button#btn-mobile {
 			justify-content: center;
+		
 		}
 		#btn-mobile {
 		  display: flex;
-		  padding: 0.5rem 1rem;
+		  padding: 2rem 1rem 0.5;
+		  margin: 0;
 		  font-size: 1.5rem;
 		  border: none;
 		  background: none;
@@ -310,6 +314,7 @@ footer {
 		  margin-top: 3px;
 		  transition: 0.3s;
 		  position: relative;
+
 		}
 		#menu.active #hamburger {
 		  border-top-color: transparent;
@@ -328,7 +333,7 @@ footer {
 		width: 100%;
 	}
 
-	.utensilios {
+	.utensilios img {
 		width: 60vw;
 	}
 
